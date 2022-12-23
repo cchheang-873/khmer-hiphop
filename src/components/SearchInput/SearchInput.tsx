@@ -1,7 +1,9 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./SearchInput.scss";
 
-export const SearchInput = (): JSX.Element => {
+export const SearchInput = (props: {
+  setFilter: React.Dispatch<string>;
+}): JSX.Element => {
   const [value, setValue] = useState("");
 
   return (
@@ -11,7 +13,10 @@ export const SearchInput = (): JSX.Element => {
         className={"SearchInput-input"}
         placeholder={`Search for artist`}
         value={value}
-        onChange={(e) => setValue(e.target.value)}
+        onChange={(e) => {
+          setValue(e.target.value);
+          props.setFilter(e.target.value);
+        }}
       />
     </div>
   );

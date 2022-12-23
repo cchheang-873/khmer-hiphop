@@ -1,0 +1,28 @@
+.ArtistCard-container {
+  text-align: center;
+  padding: 24px;
+  margin: 8px;
+  width: 200px;
+  height: 300px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px;
+
+  &:hover {
+    box-shadow: grey 0 2px 8px;
+  }
+
+  i {
+    vertical-align: text-top;
+  }
+
+  .rated-star {
+    color: #d14216;
+  }
+
+  .ArtistCard-image {
+    width: 200px;
+    height: 200px;
+    border-bottom: 1px solid grey;
+    top: 0;
+  }
+}
