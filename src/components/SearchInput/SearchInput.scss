@@ -1,0 +1,19 @@
+.SearchInput-container {
+  i {
+    vertical-align: middle;
+  }
+  .SearchInput-input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #b2aeae;
+    height: 40px;
+    font-size: 1.2rem;
+    padding-left: 8px;
+    width: 292px;
+
+    &::placeholder {
+      font-style: italic;
+    }
+  }
+}

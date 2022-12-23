@@ -1,0 +1,11 @@
+.GlobalContext-children-container {
+  display: flex;
+  gap: 24px;
+  .GlobalContext-children-content {
+    margin: 12px 0 0 0;
+    width: 83%;
+    height: 750px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+    padding: 24px 0 0 24px;
+  }
+}
